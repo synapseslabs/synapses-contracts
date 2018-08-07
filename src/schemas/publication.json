@@ -1,0 +1,34 @@
+{
+  "title": "Publication",
+  "$id": "publication.json",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicationType": {
+      "type": "string"
+    },
+    "schemaType": {
+      "type": "string"
+    }
+  }
+}

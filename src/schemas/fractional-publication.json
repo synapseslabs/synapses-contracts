@@ -1,0 +1,41 @@
+{
+  "$id":"fractional-publication.json",
+  "title": "FractionalPublication",
+  "type": "object",
+  "$merge": {
+    "source": { "$ref": "publication.json" },
+    "with": {
+      "properties": {
+        "timeIncrement": {
+            "type": "string"
+        },
+        "calendarStep": {
+          "type": "string"
+        },
+        "slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["startDate", "endDate", "isAvailable"],
+            "properties": {
+              "startDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "endDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "isAvailable": {
+                "type": "boolean"
+              },
+              "priceWei": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

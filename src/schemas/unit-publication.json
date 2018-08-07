@@ -1,0 +1,18 @@
+{
+  "$id":"unit-publication.json",
+  "title": "UnitPublication",
+  "$merge": {
+    "source": { "$ref": "publication.json" },
+    "with": {
+      "required": ["name"],
+      "properties": {
+        "priceWei": {
+          "type": "number"
+        },
+        "unitsAvailable": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
