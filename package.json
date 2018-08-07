@@ -1,0 +1,29 @@
+{
+  "name": "synapses-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for the Market Webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synapseslabs/synapses-contracts.git"
+  },
+  "keywords": [
+    "synapses",
+    "smart",
+    "contracts",
+    "marketplace",
+    "ecommerce"
+  ],
+  "author": "Alejandro Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/synapseslabs/synapses-contracts/issues"
+  },
+  "homepage": "https://github.com/synapseslabs/synapses-contracts#readme",
+  "dependencies": {
+    "truffle": "^4.1.13"
+  }
+}
