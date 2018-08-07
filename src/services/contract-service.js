@@ -1,7 +1,7 @@
-import ClaimHolderRegisteredContract from './../../contracts/build/contracts/ClaimHolderRegistered.json'
-import ClaimHolderPresignedContract from './../../contracts/build/contracts/ClaimHolderPresigned.json'
-import ClaimHolderLibrary from './../../contracts/build/contracts/ClaimHolderLibrary.json'
-import KeyHolderLibrary from './../../contracts/build/contracts/KeyHolderLibrary.json'
+//import ClaimHolderRegisteredContract from './../../contracts/build/contracts/ClaimHolderRegistered.json'
+//import ClaimHolderPresignedContract from './../../contracts/build/contracts/ClaimHolderPresigned.json'
+//import ClaimHolderLibrary from './../../contracts/build/contracts/ClaimHolderLibrary.json'
+//import KeyHolderLibrary from './../../contracts/build/contracts/KeyHolderLibrary.json'
 import PurchaseLibrary from './../../contracts/build/contracts/PurchaseLibrary.json'
 import PublicationsRegistryContract from './../../contracts/build/contracts/PublicationsRegistry.json'
 import PublicationsRegistryStorageContract from './../../contracts/build/contracts/PublicationsRegistryStorage.json'
@@ -9,8 +9,8 @@ import PublicationContract from './../../contracts/build/contracts/Publication.j
 import UnitPublicationContract from './../../contracts/build/contracts/UnitPublication.json'
 import FractionalPublicationContract from './../../contracts/build/contracts/FractionalPublication.json'
 import PurchaseContract from './../../contracts/build/contracts/Purchase.json'
-import UserRegistryContract from './../../contracts/build/contracts/UserRegistry.json'
-import OriginIdentityContract from './../../contracts/build/contracts/OriginIdentity.json'
+//import UserRegistryContract from './../../contracts/build/contracts/UserRegistry.json'
+//import OriginIdentityContract from './../../contracts/build/contracts/OriginIdentity.json'
 import bs58 from 'bs58'
 import Web3 from 'web3'
 
@@ -31,14 +31,14 @@ class ContractService {
       unitPublicationContract: UnitPublicationContract,
       fractionalPublicationContract: FractionalPublicationContract,
       purchaseContract: PurchaseContract,
-      userRegistryContract: UserRegistryContract,
-      claimHolderRegisteredContract: ClaimHolderRegisteredContract,
-      claimHolderPresignedContract: ClaimHolderPresignedContract,
-      originIdentityContract: OriginIdentityContract
+//      userRegistryContract: UserRegistryContract,
+//      claimHolderRegisteredContract: ClaimHolderRegisteredContract,
+//      claimHolderPresignedContract: ClaimHolderPresignedContract,
+//      originIdentityContract: OriginIdentityContract
     }
     this.libraries = {}
-    this.libraries.ClaimHolderLibrary = ClaimHolderLibrary
-    this.libraries.KeyHolderLibrary = KeyHolderLibrary
+//    this.libraries.ClaimHolderLibrary = ClaimHolderLibrary
+//    this.libraries.KeyHolderLibrary = KeyHolderLibrary
     this.libraries.PurchaseLibrary = PurchaseLibrary
     for (const name in contracts) {
       this[name] = contracts[name]
