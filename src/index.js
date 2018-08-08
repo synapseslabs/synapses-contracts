@@ -76,4 +76,4 @@ class Synapses {
   }
 }
 
-module.exports = Synapses
+export default Synapses
