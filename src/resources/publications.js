@@ -3,7 +3,7 @@
 
 import ResourceBase from './_resource-base'
 import Ajv from 'ajv'
-const ajvEnableMerge = require('ajv-merge-patch/keywords/merge')
+import ajvEnableMerge from 'ajv-merge-patch/keywords/merge'
 import publicationSchema from '../schemas/publication.json'
 import unitpublicationSchema from '../schemas/unit-publication.json'
 import fractionalpublicationSchema from '../schemas/fractional-publication.json'
