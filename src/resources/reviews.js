@@ -81,4 +81,4 @@ class Reviews extends ResourceBase {
   }
 }
 
-module.exports = Reviews
+export default Reviews

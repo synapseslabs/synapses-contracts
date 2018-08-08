@@ -3,7 +3,7 @@
 
 import ResourceBase from './_resource-base'
 import Ajv from 'ajv'
-import ajvEnableMerge from 'ajv-merge-patch/keywords/merge'
+const ajvEnableMerge = require('ajv-merge-patch/keywords/merge')
 import publicationSchema from '../schemas/publication.json'
 import unitpublicationSchema from '../schemas/unit-publication.json'
 import fractionalpublicationSchema from '../schemas/fractional-publication.json'
@@ -36,7 +36,7 @@ function validate(validateFn, data, schema) {
   }
 }
 
-class publications extends ResourceBase {
+class Publications extends ResourceBase {
   constructor({
     contractService,
     ipfsService,
@@ -478,4 +478,4 @@ class publications extends ResourceBase {
   }
 }
 
-module.exports = publications
+export default Publications

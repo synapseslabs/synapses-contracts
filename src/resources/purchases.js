@@ -192,4 +192,4 @@ class Purchases extends ResourceBase {
   }
 }
 
-module.exports = Purchases
+export default Purchases

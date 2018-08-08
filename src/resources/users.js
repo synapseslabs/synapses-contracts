@@ -246,4 +246,4 @@ class Users extends ResourceBase {
   }
 }
 
-module.exports = Users
+export default Users

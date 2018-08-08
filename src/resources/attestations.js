@@ -192,7 +192,7 @@ class Attestations {
   }
 }
 
-module.exports = {
+export default {
   AttestationObject,
   Attestations
 }
